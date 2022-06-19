@@ -1,0 +1,21 @@
+# common
+app:
+  #  role: proxy
+  role: provider
+logging:
+  config: classpath:logback-spring.xml
+
+# server
+proxy:
+  id: proxy-001
+spring:
+  redis:
+    host: localhost
+    password: password
+    port: 6379
+
+
+# provider
+provider:
+  user-id: "user001"
+  proxyHost: localhost
